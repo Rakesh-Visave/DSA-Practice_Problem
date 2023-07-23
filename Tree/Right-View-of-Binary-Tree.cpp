@@ -32,7 +32,7 @@ Node* newNode(int val)
         }
         
         solve(root->right,ans,level+1);
-        solve(root->right, ans,level+1);
+        solve(root->left, ans,level+1);
     }
     
     vector<int> rightView(Node *root)
