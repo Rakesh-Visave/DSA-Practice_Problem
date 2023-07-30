@@ -24,7 +24,8 @@ Node* newNode(int val) {
 
     vector <int> zigZagTraversal(Node* root)
     {
-    	vector<int> result;
+    	
+        vector<int> result;
     	if(root == NULL)
     	    return result;
     	    

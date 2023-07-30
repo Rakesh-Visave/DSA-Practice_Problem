@@ -15,7 +15,7 @@ int  exponent(int a ,int b)
         // b is odd number
         return a * ans *ans;
     }
-    else   
+    else    
     { 
     // b is even number
         return ans * ans;
