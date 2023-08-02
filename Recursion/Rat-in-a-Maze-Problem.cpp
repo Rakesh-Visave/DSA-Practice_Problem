@@ -1,4 +1,4 @@
-// GEEKFORGEEKS -- Rat in maze problem
+    // GEEKFORGEEKS -- Rat in maze problem
 #include <bits/stdc++.h>
 using namespace std;
 
