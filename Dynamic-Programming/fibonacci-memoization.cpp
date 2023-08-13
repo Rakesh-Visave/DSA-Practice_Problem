@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int fib(int n, vector<int> &dp)
+int fibMem(int n, vector<int> &dp)
 {
         // Base Case
         if(n ==1 || n==0)
@@ -12,7 +12,7 @@ int fib(int n, vector<int> &dp)
                 return dp[n];
         
         // storing the result of subproblems
-        dp[n] = fib(n-1,dp) + fib(n-2,dp);
+        dp[n] = fibMem(n-1,dp) + fibMem(n-2,dp);
         return dp[n];
 }
 
@@ -26,7 +26,10 @@ int main()
         for(int i = 0; i<=n; i++)
                 dp[i] = -1;
 
-        // calling fib Function
-        cout<<fib(n,dp)<<endl;
+        //  fib with Memoization Function
+        cout<<fibMem(n,dp)<<endl;
+        
+        //  fib with Memoization Function
+        cout<<fibMem(n,dp)<<endl;
         return 0;
 }
