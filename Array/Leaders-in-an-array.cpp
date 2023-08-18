@@ -4,16 +4,17 @@ using namespace std;
 
 
     vector<int> leaders(int a[], int n){
-      vector<int> out;
-       int nax = -1;
-       for(int i = n-1; i >= 0; --i){
-           if(nax <= a[i]){
-               nax = a[i];
-               out.push_back(a[i]);
+      vector<int> ans;
+       int maxi = INT_MIN;
+       for(int i = n-1; i >= 0; i--){
+           if(a[i] > maxi)
+               ans.push_back(a[i]);
+
+           maxi = max(maxi,a[i]);
            }
-       }
-        reverse(out.begin(), out.end());
-        return out;
+
+        reverse(ans.begin(), ans.end());
+        return ans;
         
     }
 
