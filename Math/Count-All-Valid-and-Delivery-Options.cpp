@@ -24,7 +24,7 @@ int main()
 {
     int n = 3;
     int ans = countOrders(n);
-    cout<<"all valid pickup/delivery possible sequences is: "<<ans;
+    cout<<"all valid pickup/delivery possible sequences luckis: "<<ans;
 
 
 }
