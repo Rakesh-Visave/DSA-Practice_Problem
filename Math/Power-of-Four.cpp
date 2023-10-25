@@ -1,3 +1,4 @@
+// LEETCODE -- 342.power of four
 #include<iostream>
 using namespace std;
 
