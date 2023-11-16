@@ -1,3 +1,5 @@
+// LEETCODe -- 1980.Find unique binary string
+
 #include<iostream>
 #include<cstring>
 #include<vector>
