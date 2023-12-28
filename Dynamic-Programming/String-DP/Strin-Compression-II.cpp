@@ -5,7 +5,7 @@
 #include<climits>
 using namespace std;
 
-     int n;
+    int n;
     vector<vector<int>> t;
     int solve(int i, int k, string &s) {
         if(k < 0) {
